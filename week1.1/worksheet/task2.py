@@ -15,7 +15,7 @@ while not_int:
         value = int(input('\nEnter an amount you would like to save every month: -> '))
         not_int = False
     except:
-        print('\nPlease enter a valid amount\n\n')
+        print('\nInvalid Amount\n\n')
 
 # Calculate the total amount of money they will have saved by the end of the year (amount per month multiplied by 12).
 # print this out for the user with a suitable message.
@@ -26,6 +26,6 @@ print(f'\nTotal amount saved after 12 months: £{value:.2f}')
 
 # Calculate the total amount of money including interest (0.8% of the final annual amount) they will have saved in a year.
 # print this out in the format £X.XX (to two decimal places).
-
-value = value + (value*0.08)
+print(value*0.8)
+value = value + (value*0.8)
 print(f'\nTotal amount saved incl. interest: £{value:.2f}')
