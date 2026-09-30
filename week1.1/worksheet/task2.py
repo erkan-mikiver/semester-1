@@ -26,6 +26,5 @@ print(f'\nTotal amount saved after 12 months: £{value:.2f}')
 
 # Calculate the total amount of money including interest (0.8% of the final annual amount) they will have saved in a year.
 # print this out in the format £X.XX (to two decimal places).
-print(value*0.8)
-value = value + (value*0.8)
+value = value + (value*0.008)
 print(f'\nTotal amount saved incl. interest: £{value:.2f}')
