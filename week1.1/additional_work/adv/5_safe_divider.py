@@ -5,10 +5,32 @@
 - Only print the final answer when the calculation succeeds.
 """
 
-numerator_input = input("Enter the numerator: ")
-denominator_input = input("Enter the denominator: ")
+
 
 # TODO: wrap the risky operations in a try/except block
 # TODO: convert the values to integers and perform the division
 # TODO: print clear feedback when something goes wrong
 # TODO: only show the answer when the division succeeds
+
+invalid = True
+while invalid:
+    try:
+        numerator_input = input("\nEnter the numerator: ")
+        numerator = int(numerator_input)
+
+        denominator_input = input("\nEnter the denominator: ")
+        denominator = int(denominator_input)
+
+        final = numerator / denominator
+
+        invalid = False
+
+    except ValueError:
+        print('\n\nERROR: Enter a valid numerical value')
+
+    except ZeroDivisionError:
+        print('\n\nERROR: Denominator cannot be 0, amend this value to continue')
+
+print()
+print()
+print(final)
