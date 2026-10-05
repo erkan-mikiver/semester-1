@@ -17,4 +17,18 @@ print(shopping)
 
 # Replace bananas with grapes
 
+i=0
+for j in shopping:
+    if j == 'bananas':
+        shopping[i] = 'grapes'
+    else:
+        i += 1
+
+print(shopping)
+
 # Add yoghurt, just after milk
+
+milk_pos = shopping.index('milk')
+shopping.insert(milk_pos+1, 'yoghurt')
+print(shopping)
+        
