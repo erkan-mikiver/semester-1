@@ -12,7 +12,7 @@ while grade_invalid:
         else:
             grade_invalid = False
     except ValueError:
-        sys.exit("Error! Grade must be an integer between 0 and 100")
+        sys.exit("Error: Grade must be an integer between 0 and 100")
         
 if grade < 40:
     print(f'{grade} is a Fail')
