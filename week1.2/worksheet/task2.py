@@ -14,8 +14,9 @@ else:
     # MEDIAN 
     numbers.sort()
     list_len = len(numbers)
-
-    if list_len == 2:
+    if list_len == 1:
+        median = numbers[0]
+    elif list_len == 2:
         median = (sum(numbers) / 2)
     elif (list_len % 2) == 0:
         middle = (list_len + 1) / 2
@@ -23,7 +24,7 @@ else:
         median = x / 2
     else:
         middle = ((list_len + 1) / 2) -1
-        median = numbers[middle]
+        median = numbers[int(middle)]
 
     # MEAN
     total = sum(numbers)
