@@ -8,9 +8,6 @@ if len(numbers) == 0:
     sys.exit('Error: no numbers provided')
 else:
 
-    print(numbers)
-
-
     # MEDIAN 
     numbers.sort()
     list_len = len(numbers)
