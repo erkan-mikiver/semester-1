@@ -19,7 +19,6 @@ i = 0
 for _ in range(systime, maxtime+1):
 
     print(f"Time {systime:03} State {state}")
-
     systime += 1
     timepassed += 1
 
