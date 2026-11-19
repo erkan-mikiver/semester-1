@@ -34,10 +34,16 @@ class Circle:
         self.radius = radius
     
     def area(self):
+        """
+        Calculates the area of the circle
+        """
         area = (self.radius**2)*(math.pi)
         return round(area, 2)
     
     def perimeter(self):
+        """
+        Calculates the perimeter of the circle
+        """
         perimeter = 2 * math.pi * self.radius
         return round(perimeter, 2)
 
