@@ -73,4 +73,9 @@ class Circle:
         return f"radius={self.radius}, centre={self.centre}"
 
     # Implement your __contains__() method here
+    def __contains__(self, p):
+        """
+        Calculates whether a point is inside the circle
+        """
+        return math.hypot(self.centre.x - p.x, self.centre.y - p.y) <= self.radius
         

@@ -21,6 +21,7 @@ class Dataset:
 
         Any existing data will be deleted.
         """
+        self.data = []
 
     def __len__(self):
         """
